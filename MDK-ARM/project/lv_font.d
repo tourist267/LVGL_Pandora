@@ -1,0 +1,16 @@
+project\lv_font.o: ..\Core\lvgl\src\font\lv_font.c
+project\lv_font.o: ..\Core\lvgl\src\font\lv_font.h
+project\lv_font.o: ..\Core\lvgl\src\font\../lv_conf_internal.h
+project\lv_font.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdint.h
+project\lv_font.o: ..\Core\lvgl\src\font\../lv_conf_kconfig.h
+project\lv_font.o: ..\Core\lvgl\lv_conf.h
+project\lv_font.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stddef.h
+project\lv_font.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdbool.h
+project\lv_font.o: ..\Core\lvgl\src\font\lv_symbol_def.h
+project\lv_font.o: ..\Core\lvgl\src\font\../misc/lv_area.h
+project\lv_font.o: ..\Core\lvgl\src\font\../misc/lv_utils.h
+project\lv_font.o: ..\Core\lvgl\src\font\../misc/lv_log.h
+project\lv_font.o: ..\Core\lvgl\src\font\../misc/lv_types.h
+project\lv_font.o: ..\Core\lvgl\src\font\../misc/lv_assert.h
+project\lv_font.o: ..\Core\lvgl\src\font\../misc/lv_mem.h
+project\lv_font.o: D:\Keil_v5\ARM\compiler\Bin\..\include\string.h
