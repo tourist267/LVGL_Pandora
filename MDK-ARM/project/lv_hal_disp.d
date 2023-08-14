@@ -1,9 +1,9 @@
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\lv_hal_disp.c
-project\lv_hal_disp.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdint.h
-project\lv_hal_disp.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stddef.h
+project\lv_hal_disp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+project\lv_hal_disp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\lv_hal.h
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\lv_hal_disp.h
-project\lv_hal_disp.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdbool.h
+project\lv_hal_disp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\lv_hal.h
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\../draw/lv_draw.h
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\../draw/../lv_conf_internal.h
@@ -18,11 +18,11 @@ project\lv_hal_disp.o: ..\Core\lvgl\src\hal\../draw/../misc/lv_assert.h
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\../draw/../misc/lv_log.h
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\../draw/../misc/lv_types.h
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\../draw/../misc/lv_mem.h
-project\lv_hal_disp.o: D:\Keil_v5\ARM\compiler\Bin\..\include\string.h
+project\lv_hal_disp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\../draw/../misc/lv_math.h
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\../draw/../misc/lv_anim.h
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\../draw/../misc/lv_txt.h
-project\lv_hal_disp.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdarg.h
+project\lv_hal_disp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\../draw/../misc/lv_printf.h
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\../draw/../misc/lv_bidi.h
 project\lv_hal_disp.o: ..\Core\lvgl\src\hal\../draw/../misc/lv_style_gen.h

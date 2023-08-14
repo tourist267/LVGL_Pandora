@@ -4,7 +4,7 @@ project\lcd.o: ../Core/User/sys.h
 project\lcd.o: ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h
 project\lcd.o: ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l475xx.h
 project\lcd.o: ../Drivers/CMSIS/Include/core_cm4.h
-project\lcd.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdint.h
+project\lcd.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 project\lcd.o: ../Drivers/CMSIS/Include/cmsis_version.h
 project\lcd.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 project\lcd.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -16,7 +16,7 @@ project\lcd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h
 project\lcd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h
 project\lcd.o: ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h
 project\lcd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-project\lcd.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stddef.h
+project\lcd.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 project\lcd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h
 project\lcd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h
 project\lcd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h
