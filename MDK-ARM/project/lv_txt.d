@@ -1,14 +1,14 @@
 project\lv_txt.o: ..\Core\lvgl\src\misc\lv_txt.c
-project\lv_txt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+project\lv_txt.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdarg.h
 project\lv_txt.o: ..\Core\lvgl\src\misc\lv_txt.h
 project\lv_txt.o: ..\Core\lvgl\src\misc\../lv_conf_internal.h
-project\lv_txt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+project\lv_txt.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdint.h
 project\lv_txt.o: ..\Core\lvgl\src\misc\../lv_conf_kconfig.h
 project\lv_txt.o: ..\Core\lvgl\lv_conf.h
-project\lv_txt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+project\lv_txt.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdbool.h
 project\lv_txt.o: ..\Core\lvgl\src\misc\lv_area.h
 project\lv_txt.o: ..\Core\lvgl\src\misc\../font/lv_font.h
-project\lv_txt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+project\lv_txt.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stddef.h
 project\lv_txt.o: ..\Core\lvgl\src\misc\../font/lv_symbol_def.h
 project\lv_txt.o: ..\Core\lvgl\src\misc\lv_printf.h
 project\lv_txt.o: ..\Core\lvgl\src\misc\lv_types.h
@@ -19,7 +19,7 @@ project\lv_txt.o: ..\Core\lvgl\src\misc\../draw/../misc/lv_color.h
 project\lv_txt.o: ..\Core\lvgl\src\misc\../draw/../misc/lv_assert.h
 project\lv_txt.o: ..\Core\lvgl\src\misc\../draw/../misc/lv_log.h
 project\lv_txt.o: ..\Core\lvgl\src\misc\../draw/../misc/lv_mem.h
-project\lv_txt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+project\lv_txt.o: D:\Keil_v5\ARM\compiler\Bin\..\include\string.h
 project\lv_txt.o: ..\Core\lvgl\src\misc\../draw/../misc/lv_math.h
 project\lv_txt.o: ..\Core\lvgl\src\misc\../draw/../misc/lv_anim.h
 project\lv_txt.o: ..\Core\lvgl\src\misc\../draw/../misc/lv_bidi.h

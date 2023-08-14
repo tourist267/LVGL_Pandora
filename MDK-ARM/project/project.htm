@@ -3,7 +3,7 @@
 <title>Static Call Graph - [project\project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image project\project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Aug 14 16:10:00 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Aug 14 21:02:25 2023
 <BR><P>
 <H3>Maximum Stack Usage =       1040 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -732,8 +732,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = strcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_decoder_open
-<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[384]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_set_options
+<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[2f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_label_set_text
 <LI><a href="#[460]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_textarea_set_text
 <LI><a href="#[450]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_roller_set_options
@@ -744,8 +744,8 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[392]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_fs_get_ext
 <LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_decoder_open
-<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[384]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_set_options
+<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[2f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_label_set_text
 <LI><a href="#[3b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_textarea_del_char
 <LI><a href="#[2e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_textarea_add_text
@@ -864,9 +864,9 @@ Global Symbols
 <P><STRONG><a name="[139]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32l4xx_hal_gpio.o(i.HAL_GPIO_WritePin))
 <BR><BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
 <LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
 <LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_CMD
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disp_flush
 </UL>
 
@@ -1028,32 +1028,12 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
-<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_CMD
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
 <LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Address_Set
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_CMD
 </UL>
 <BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[136]"></a>LCD_WR_CMD</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, lcd.o(i.LCD_WR_CMD))
-<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = LCD_WR_CMD &rArr; SPI_Send &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFifoStateUntilTimeout
-</UL>
-<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Send
-</UL>
-<BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
-<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Address_Set
-</UL>
-
-<P><STRONG><a name="[137]"></a>LCD_WR_DATA</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, lcd.o(i.LCD_WR_DATA))
-<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = LCD_WR_DATA &rArr; SPI_Send &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFifoStateUntilTimeout
-</UL>
-<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Send
-</UL>
-<BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
-<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Address_Set
 </UL>
 
 <P><STRONG><a name="[13d]"></a>LVGL_Init</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, user_lvgl.o(i.LVGL_Init))
@@ -1087,9 +1067,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_CMD
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disp_flush
 </UL>
 
@@ -2173,10 +2153,10 @@ Global Symbols
 <LI><a href="#[333]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_month_length
 <LI><a href="#[2e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_day_of_week
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_constructor
-<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;year_event_cb
+<BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;year_event_cb
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;month_event_cb
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;month_event_cb
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_constructor
 </UL>
 
 <P><STRONG><a name="[332]"></a>lv_calendar_set_today_date</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, lv_calendar.o(i.lv_calendar_set_today_date))
@@ -3184,8 +3164,8 @@ Global Symbols
 <P><STRONG><a name="[25a]"></a>lv_event_get_param</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lv_event.o(i.lv_event_get_param))
 <BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_event
 <LI><a href="#[3f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_draw
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_part_begin_event_cb
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_chart_event
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_part_begin_event_cb
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_colorwheel_event
 <LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_spinbox_event
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_bar_event
@@ -3207,13 +3187,13 @@ Global Symbols
 
 <P><STRONG><a name="[1c0]"></a>lv_event_get_target</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lv_event.o(i.lv_event_get_target))
 <BR><BR>[Called By]<UL><LI><a href="#[3f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_draw
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_part_begin_event_cb
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_chart_event
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;year_event_cb
 <LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;value_changed_event_cb
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;month_event_cb
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;value_changed_event_cb
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;month_event_cb
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_part_begin_event_cb
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_led_event
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_colorwheel_event
 <LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_disc_grad
@@ -3304,7 +3284,6 @@ Global Symbols
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;grid_update
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flex_update
 <LI><a href="#[1eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;children_repos
-<LI><a href="#[331]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_set_showed_date
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_chart_event
 <LI><a href="#[2ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_y_ticks
 <LI><a href="#[2ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_x_ticks
@@ -3315,6 +3294,7 @@ Global Symbols
 <LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_cursors
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_constructor
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_constructor
+<LI><a href="#[331]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_set_showed_date
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_led_event
 <LI><a href="#[3b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_textarea_del_char
 <LI><a href="#[2e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_textarea_add_text
@@ -4138,10 +4118,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = lv_map
 </UL>
 <BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_anim_path_ease_out
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_anim_path_linear
 <LI><a href="#[2ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_y_ticks
 <LI><a href="#[2ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_x_ticks
 <LI><a href="#[2a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_series_scatter
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_anim_path_linear
 <LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_chart_get_point_pos_by_id
 <LI><a href="#[2a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_ticks_and_labels
 <LI><a href="#[292]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_needles
@@ -4175,9 +4155,9 @@ Global Symbols
 <LI><a href="#[393]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_fs_open
 <LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_decoder_built_in_open
 <LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_decoder_open
+<LI><a href="#[384]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_set_options
 <LI><a href="#[352]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_theme_default_init
 <LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
-<LI><a href="#[384]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_set_options
 <LI><a href="#[2f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_label_set_text
 <LI><a href="#[3ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_keyboard_update_ctrl_map
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_tabview_constructor
@@ -4287,10 +4267,10 @@ Global Symbols
 <LI><a href="#[390]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_fs_close
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_decoder_built_in_close
 <LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_decoder_open
-<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_chart_destructor
 <LI><a href="#[384]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_set_options
 <LI><a href="#[3c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_label_set_text_fmt
+<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[2f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_label_set_text
 <LI><a href="#[3ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_keyboard_update_ctrl_map
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_menu_page_destructor
@@ -4480,9 +4460,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_allocate_spec_attr
 <LI><a href="#[2d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_mem_realloc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_constructor
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_constructor
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_constructor
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_constructor
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_constructor
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_keyboard_constructor
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_menu_constructor
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_tabview_constructor
@@ -4673,10 +4653,10 @@ Global Symbols
 <LI><a href="#[174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_mem_alloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[34f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_create
-<LI><a href="#[323]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btnmatrix_create
 <LI><a href="#[376]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_create
 <LI><a href="#[387]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_label_create
 <LI><a href="#[31d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btn_create
+<LI><a href="#[323]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btnmatrix_create
 <LI><a href="#[3a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_create
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_menu_constructor
 <LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_constructor
@@ -4701,10 +4681,10 @@ Global Symbols
 <LI><a href="#[3ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_enable_style_refresh
 </UL>
 <BR>[Called By]<UL><LI><a href="#[34f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_create
-<LI><a href="#[323]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btnmatrix_create
 <LI><a href="#[376]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_create
 <LI><a href="#[387]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_label_create
 <LI><a href="#[31d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btn_create
+<LI><a href="#[323]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btnmatrix_create
 <LI><a href="#[3a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_create
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_menu_constructor
 <LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_constructor
@@ -4853,10 +4833,10 @@ Global Symbols
 <LI><a href="#[1c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calc
 <LI><a href="#[2b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_track_end
 <LI><a href="#[1eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;children_repos
-<LI><a href="#[331]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_set_showed_date
 <LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;value_changed_event_cb
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;value_changed_event_cb
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;month_event_cb
+<LI><a href="#[331]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_set_showed_date
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tileview_event_cb
 <LI><a href="#[49c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_tabview_get_tab_btns
 <LI><a href="#[49b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_tabview_get_content
@@ -4930,13 +4910,13 @@ Global Symbols
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calc_rows
 <LI><a href="#[1c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calc
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flex_update
-<LI><a href="#[322]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btnmatrix_set_map
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_chart_event
 <LI><a href="#[2ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_y_ticks
 <LI><a href="#[2a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_series_scatter
 <LI><a href="#[2a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_series_line
 <LI><a href="#[2a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_series_bar
 <LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_div_lines
+<LI><a href="#[322]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btnmatrix_set_map
 <LI><a href="#[3b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_textarea_set_cursor_pos
 <LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_chart_get_point_pos_by_id
 <LI><a href="#[3d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_menu_refr_main_header_mode
@@ -4965,7 +4945,6 @@ Global Symbols
 <LI><a href="#[1c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calc
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flex_update
 <LI><a href="#[1eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;children_repos
-<LI><a href="#[322]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btnmatrix_set_map
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_chart_event
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;invalidate_point
 <LI><a href="#[2ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_x_ticks
@@ -4973,6 +4952,7 @@ Global Symbols
 <LI><a href="#[2a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_series_line
 <LI><a href="#[2a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_series_bar
 <LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_div_lines
+<LI><a href="#[322]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btnmatrix_set_map
 <LI><a href="#[3b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_textarea_set_cursor_pos
 <LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_chart_get_point_pos_by_id
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cont_scroll_end_event_cb
@@ -5459,8 +5439,6 @@ Global Symbols
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flex_update
 <LI><a href="#[2b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_track_end
 <LI><a href="#[1eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;children_repos
-<LI><a href="#[322]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btnmatrix_set_map
-<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_width
 <LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_pad_top
 <LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_pad_right
@@ -5471,6 +5449,8 @@ Global Symbols
 <LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_border_width
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;invalidate_point
 <LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_div_lines
+<LI><a href="#[322]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btnmatrix_set_map
+<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[2cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_pad_top
 <LI><a href="#[2cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_pad_right
 <LI><a href="#[2cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_pad_left
@@ -5824,13 +5804,13 @@ Global Symbols
 <LI><a href="#[37c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_move_to_index
 <LI><a href="#[2e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;item_repos
 <LI><a href="#[1eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;children_repos
-<LI><a href="#[322]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btnmatrix_set_map
-<LI><a href="#[331]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_set_showed_date
-<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;invalidate_point
 <LI><a href="#[386]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_set_selected
 <LI><a href="#[384]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_set_options
 <LI><a href="#[3c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_label_set_text_fmt
+<LI><a href="#[322]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btnmatrix_set_map
+<LI><a href="#[331]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_set_showed_date
+<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[2f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_label_set_text
 <LI><a href="#[3b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_textarea_del_char
 <LI><a href="#[2e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_textarea_add_text
@@ -6117,8 +6097,8 @@ Global Symbols
 <LI><a href="#[3d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_mark_layout_as_dirty
 </UL>
 <BR>[Called By]<UL><LI><a href="#[31f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_class_init_obj
-<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_chart_event
+<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[3bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_label_refr_text
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_event
 <LI><a href="#[499]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;refr_size_form_row
@@ -6313,9 +6293,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[43a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_set_style_layout
 <LI><a href="#[43b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_set_style_flex_flow
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_constructor
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_constructor
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_constructor
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_constructor
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_constructor
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_menu_section_constructor
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_menu_page_constructor
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_menu_cont_constructor
@@ -6331,9 +6311,9 @@ Global Symbols
 <LI><a href="#[3d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_mark_layout_as_dirty
 <LI><a href="#[43c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_set_style_flex_grow
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_constructor
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_constructor
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_constructor
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_constructor
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_constructor
 <LI><a href="#[3d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_menu_refr_main_header_mode
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_menu_constructor
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_tabview_constructor
@@ -6599,8 +6579,8 @@ Global Symbols
 <LI><a href="#[404]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_local_style_prop
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_set_size
-<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_constructor
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_constructor
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_constructor
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_tabview_constructor
 <LI><a href="#[458]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_textarea_set_one_line
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_win_constructor
@@ -6758,9 +6738,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[195]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_vsnprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[331]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_set_showed_date
-<LI><a href="#[2ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_y_ticks
+<BR>[Called By]<UL><LI><a href="#[2ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_y_ticks
 <LI><a href="#[2ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_x_ticks
+<LI><a href="#[331]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_set_showed_date
 <LI><a href="#[2a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_ticks_and_labels
 <LI><a href="#[45a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_spinbox_updatevalue
 </UL>
@@ -7794,9 +7774,9 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[227]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_draw_label
 <LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_bg_img
-<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[2ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_y_ticks
 <LI><a href="#[2ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_x_ticks
+<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[2a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_ticks_and_labels
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_checkbox_event
 <LI><a href="#[335]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_checkbox_draw
@@ -7915,6 +7895,26 @@ Local Symbols
 <P><STRONG><a name="[129]"></a>__NVIC_SetPriority</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, stm32l4xx_hal_cortex.o(i.__NVIC_SetPriority))
 <BR><BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_Config
 <LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
+</UL>
+
+<P><STRONG><a name="[136]"></a>LCD_WR_CMD</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, lcd.o(i.LCD_WR_CMD))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = LCD_WR_CMD &rArr; SPI_Send &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFifoStateUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Send
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Address_Set
+</UL>
+
+<P><STRONG><a name="[137]"></a>LCD_WR_DATA</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, lcd.o(i.LCD_WR_DATA))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = LCD_WR_DATA &rArr; SPI_Send &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFifoStateUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Send
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Address_Set
 </UL>
 
 <P><STRONG><a name="[2ae]"></a>event_send_core</STRONG> (Thumb, 286 bytes, Stack size 16 bytes, lv_event.o(i.event_send_core))
@@ -10173,9 +10173,9 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[1c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_parent
 <LI><a href="#[1c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_get_target
 <LI><a href="#[1c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_child
+<LI><a href="#[3c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_label_set_text_fmt
 <LI><a href="#[331]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_set_showed_date
 <LI><a href="#[4ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_get_showed_date
-<LI><a href="#[3c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_label_set_text_fmt
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lv_calendar_header_arrow.o(i.my_constructor)
 </UL>
@@ -10208,8 +10208,8 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[1c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_parent
 <LI><a href="#[1c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_get_target
 <LI><a href="#[1c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_child
-<LI><a href="#[4ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_get_showed_date
 <LI><a href="#[3c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_label_set_text_fmt
+<LI><a href="#[4ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_get_showed_date
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lv_calendar_header_arrow.o(i.my_constructor)
 </UL>
@@ -10218,9 +10218,9 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_get_user_data
 <LI><a href="#[1c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_get_target
+<LI><a href="#[4af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_get_selected
 <LI><a href="#[331]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_set_showed_date
 <LI><a href="#[4ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_get_showed_date
-<LI><a href="#[4af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_get_selected
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lv_calendar_header_dropdown.o(i.my_constructor)
 </UL>
@@ -10244,8 +10244,8 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[1c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_parent
 <LI><a href="#[1c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_get_target
 <LI><a href="#[1c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_child
-<LI><a href="#[4ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_get_showed_date
 <LI><a href="#[386]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_set_selected
+<LI><a href="#[4ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_get_showed_date
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lv_calendar_header_dropdown.o(i.my_constructor)
 </UL>
@@ -10254,9 +10254,9 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_get_user_data
 <LI><a href="#[1c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_event_get_target
+<LI><a href="#[4af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_get_selected
 <LI><a href="#[331]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_set_showed_date
 <LI><a href="#[4ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_calendar_get_showed_date
-<LI><a href="#[4af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_dropdown_get_selected
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lv_calendar_header_dropdown.o(i.my_constructor)
 </UL>
@@ -10400,12 +10400,12 @@ Local Symbols
 <LI><a href="#[227]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_draw_label
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_draw_line_dsc_init
 <LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_draw_line
-<LI><a href="#[2aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_snprintf
 <LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_pad_top
 <LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_pad_left
 <LI><a href="#[2a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_pad_column
 <LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_pad_bottom
 <LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_border_width
+<LI><a href="#[2aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_snprintf
 <LI><a href="#[212]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_map
 <LI><a href="#[2ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_tick_gsc
 </UL>
@@ -10426,11 +10426,11 @@ Local Symbols
 <LI><a href="#[227]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_draw_label
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_draw_line_dsc_init
 <LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_draw_line
-<LI><a href="#[2aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_snprintf
 <LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_pad_top
 <LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_pad_right
 <LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_pad_left
 <LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_border_width
+<LI><a href="#[2aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_snprintf
 <LI><a href="#[212]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_map
 <LI><a href="#[2ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_tick_gsc
 </UL>
@@ -10883,9 +10883,9 @@ Local Symbols
 <LI><a href="#[330]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_set_flex_grow
 <LI><a href="#[32f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_set_flex_flow
 <LI><a href="#[3d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_set_flex_align
-<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[387]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_label_create
 <LI><a href="#[31d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_btn_create
+<LI><a href="#[3a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_set_src
 <LI><a href="#[3a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_create
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lv_menu.o(.constdata)

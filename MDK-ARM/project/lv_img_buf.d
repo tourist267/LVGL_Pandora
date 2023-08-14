@@ -1,11 +1,11 @@
 project\lv_img_buf.o: ..\Core\lvgl\src\draw\lv_img_buf.c
-project\lv_img_buf.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-project\lv_img_buf.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+project\lv_img_buf.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stddef.h
+project\lv_img_buf.o: D:\Keil_v5\ARM\compiler\Bin\..\include\string.h
 project\lv_img_buf.o: ..\Core\lvgl\src\draw\lv_img_buf.h
-project\lv_img_buf.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+project\lv_img_buf.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdbool.h
 project\lv_img_buf.o: ..\Core\lvgl\src\draw\../misc/lv_color.h
 project\lv_img_buf.o: ..\Core\lvgl\src\draw\../misc/../lv_conf_internal.h
-project\lv_img_buf.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+project\lv_img_buf.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdint.h
 project\lv_img_buf.o: ..\Core\lvgl\src\draw\../misc/../lv_conf_kconfig.h
 project\lv_img_buf.o: ..\Core\lvgl\lv_conf.h
 project\lv_img_buf.o: ..\Core\lvgl\src\draw\../misc/lv_assert.h
@@ -22,7 +22,7 @@ project\lv_img_buf.o: ..\Core\lvgl\src\draw\../misc/../font/lv_font.h
 project\lv_img_buf.o: ..\Core\lvgl\src\draw\../misc/../font/lv_symbol_def.h
 project\lv_img_buf.o: ..\Core\lvgl\src\draw\../misc/lv_anim.h
 project\lv_img_buf.o: ..\Core\lvgl\src\draw\../misc/lv_txt.h
-project\lv_img_buf.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+project\lv_img_buf.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdarg.h
 project\lv_img_buf.o: ..\Core\lvgl\src\draw\../misc/lv_printf.h
 project\lv_img_buf.o: ..\Core\lvgl\src\draw\../misc/lv_bidi.h
 project\lv_img_buf.o: ..\Core\lvgl\src\draw\../misc/lv_style_gen.h

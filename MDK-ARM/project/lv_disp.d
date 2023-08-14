@@ -2,8 +2,8 @@ project\lv_disp.o: ..\Core\lvgl\src\core\lv_disp.c
 project\lv_disp.o: ..\Core\lvgl\src\core\lv_disp.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/lv_hal.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/lv_hal_disp.h
-project\lv_disp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-project\lv_disp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+project\lv_disp.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdint.h
+project\lv_disp.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdbool.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/lv_hal.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/lv_draw.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../lv_conf_internal.h
@@ -11,7 +11,7 @@ project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../lv_conf_kconfig.h
 project\lv_disp.o: ..\Core\lvgl\lv_conf.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/lv_style.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/../font/lv_font.h
-project\lv_disp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+project\lv_disp.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stddef.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/../font/lv_symbol_def.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/../font/../misc/lv_area.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/lv_color.h
@@ -19,11 +19,11 @@ project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/lv_assert.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/lv_log.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/lv_types.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/lv_mem.h
-project\lv_disp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+project\lv_disp.o: D:\Keil_v5\ARM\compiler\Bin\..\include\string.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/lv_math.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/lv_anim.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/lv_txt.h
-project\lv_disp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+project\lv_disp.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdarg.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/lv_printf.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/lv_bidi.h
 project\lv_disp.o: ..\Core\lvgl\src\core\../hal/../draw/../misc/lv_style_gen.h

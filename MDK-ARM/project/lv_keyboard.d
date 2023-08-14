@@ -2,12 +2,12 @@ project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\lv_keyboard.c
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\lv_keyboard.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/lv_btnmatrix.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../lv_conf_internal.h
-project\lv_keyboard.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+project\lv_keyboard.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdint.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../lv_conf_kconfig.h
 project\lv_keyboard.o: ..\Core\lvgl\lv_conf.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../core/lv_obj.h
-project\lv_keyboard.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-project\lv_keyboard.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+project\lv_keyboard.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stddef.h
+project\lv_keyboard.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdbool.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../core/../misc/lv_style.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../core/../misc/../font/lv_font.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../core/../misc/../font/lv_symbol_def.h
@@ -17,11 +17,11 @@ project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../core/../misc/lv_log.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../core/../misc/lv_types.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../core/../misc/lv_mem.h
-project\lv_keyboard.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+project\lv_keyboard.o: D:\Keil_v5\ARM\compiler\Bin\..\include\string.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../core/../misc/lv_math.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../core/../misc/lv_anim.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../core/../misc/lv_txt.h
-project\lv_keyboard.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+project\lv_keyboard.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdarg.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../core/../misc/lv_printf.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../core/../misc/lv_bidi.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../core/../misc/lv_style_gen.h
@@ -59,4 +59,4 @@ project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/../core/lv_group.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/lv_textarea.h
 project\lv_keyboard.o: ..\Core\lvgl\src\extra\widgets\keyboard\../../../widgets/lv_label.h
-project\lv_keyboard.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+project\lv_keyboard.o: D:\Keil_v5\ARM\compiler\Bin\..\include\stdlib.h

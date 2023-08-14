@@ -10,14 +10,14 @@ extern SPI_HandleTypeDef hspi1;
  *
  * @return  void
  */
-static void SPI_Send(u8 *data ,u32 size)
+void SPI_Send(u8 *data ,u32 size)
 {
 	u32 i,data_num;
 	
 	//发送的数据量//
 	data_num = size/0xffff;
 	
-	for(i = 0;i<=data_num;i++)
+	for(i = 0;i <= data_num;i++)
 	{
 		//短数据一次发一位,长数据一次发一个字节//
 		if(i == data_num){HAL_SPI_Transmit(&hspi1,&data[i*0xffff],size%0xffff,1000);}

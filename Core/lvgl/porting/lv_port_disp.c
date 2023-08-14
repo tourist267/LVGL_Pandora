@@ -163,19 +163,33 @@ void disp_disable_update(void)
  *'lv_disp_flush_ready()' has to be called when finished.*/
 static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p)
 {
-    if(disp_flush_enabled) {
+    if(disp_flush_enabled) 
+		{
+			
+			u16 i;
+			u8 dat[2];
+			LCD_Address_Set(area->x1,area->y1,area->x2,area->y2);
+		
+			LCD_DC_DATA;
+			for(i = 0; i< MY_DISP_HOR_RES * 10;i++)
+			{
+				dat[0] = color_p->full>>8;
+				dat[1] = color_p->full;
+				SPI_Send(dat,2);
+			}
+			
         /*The most simple case (but also the slowest) to put all pixels to the screen one-by-one*/
 
-        int32_t x;
-        int32_t y;
-        for(y = area->y1; y <= area->y2; y++) {
-            for(x = area->x1; x <= area->x2; x++) {
-                /*Put a pixel to the display. For example:*/
-                /*put_px(x, y, *color_p)*/
-								LCD_Draw_ColorPoint(x,y,color_p->full);
-                color_p++;
-            }
-        }
+//        int32_t x;
+//        int32_t y;
+//        for(y = area->y1; y <= area->y2; y++) {
+//            for(x = area->x1; x <= area->x2; x++) {
+//                /*Put a pixel to the display. For example:*/
+//                /*put_px(x, y, *color_p)*/
+//								LCD_Draw_ColorPoint(x,y,color_p->full);
+//                color_p++;
+//            }
+//        }
     }
 
     /*IMPORTANT!!!

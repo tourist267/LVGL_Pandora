@@ -71,7 +71,7 @@
 
 
 
-
+void SPI_Send(u8 *data ,u32 size);
 void LCD_Init(void);
 void LCD_Show(void);
 void LCD_Clear(u16 color);
